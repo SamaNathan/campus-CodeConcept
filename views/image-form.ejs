@@ -1,0 +1,17 @@
+<h2>Ajouter une image</h2>
+
+<div>
+    <form action="/image/new" enctype="multipart/form-data" method="POST">
+        <input type="text" placeholder="title" name="title">
+        <input type="file"  name="picture"></br>
+        <button type="submit">Ajouter</button>
+    </form>
+</div>
+
+<div>
+    <% if (uploadedImageName){ %>
+        <div><%= uploadedImageName %></div>
+        <img src="http://localhost:3000/image/<%=uploadedImageName %>" alt="" />
+
+    <% } %>
+</div>

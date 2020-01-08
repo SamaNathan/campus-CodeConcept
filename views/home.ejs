@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>File uploader</title>
+</head>
+<body>
+    <h1> File uploader</h1>
+    <% if (allImagesName && allImagesName.length > 0) { %>
+    <% allImagesName.forEach( imgName => { %>
+    <img src="http://localhost:3000/image/<%=imgName %>" alt="<%=imgName %>" style="height: 150p" />
+    <%})%> 
+    <%}%>
+</body>
+</html>
